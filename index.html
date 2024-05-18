@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Spinner</title>
+    <LINK rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "spinner">
+    <img src = "pedro.png" alt="Pedro!" height="500px" >
+    </div>
+    
+    <audio autoplay>
+        <source src="audio.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('audioPlayer');
+            audio.volume = 1.0; // Define o volume inicial (0.0 a 1.0)
+            audio.play().catch(function(error) {
+                console.log('Reprodução automática bloqueada:', error);
+            });
+        });
+    </script>
+</body>
+</html>
